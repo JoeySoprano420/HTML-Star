@@ -1,0 +1,16 @@
+<>
+@let x: Number = 42;
+@const PI: Decimal = 3.14159;
+@var name: Optional<String> = "HTML Star";
+@type Vector = Array<Number>;
+@enum Color { Red, Green, Blue };
+@struct Point { x: Number, y: Number };
+@union Result<T> { value: T, error: String };
+*
+
+<>
+@function identity<T>(value: T): T
+{
+    @return value;
+}
+*
