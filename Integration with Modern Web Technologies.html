@@ -1,0 +1,12 @@
+<>
+@import "wasm_module.wasm";  ^Importing a WebAssembly module^
+
+@function useWebComponent(componentName: String): Void
+{
+    @customElements.define(componentName, class extends HTMLElement {
+        @connectedCallback() {
+            @this.innerHTML = `<p>Hello, Web Component!</p>`;
+        }
+    });
+}
+*
