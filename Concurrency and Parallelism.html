@@ -1,0 +1,11 @@
+<>
+@function parallelSum(numbers: Array<Number>): Promise<Number>
+{
+    @let tasks = numbers.map(n => @new Promise(resolve => {
+        @setTimeout(() => resolve(n), 0);
+    }));
+
+    @let results = @await Promise.all(tasks);
+    @return results.reduce((a, b) => a + b, 0);
+}
+*
