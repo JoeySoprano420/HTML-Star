@@ -1,0 +1,51 @@
++HTML Star+
+
+~HTML Star~
+
+<>
+@import "module_name";  ^Importing external module^
+*
+
+<>
+@function greet(name: String): Void
+{
+    @let greeting: String = "Hello, " + name + "!";
+    @console.log(greeting);
+}
+*
+
+<>
+@function add(a: Number, b: Number): Number
+{
+    @let result: Number = a + b;
+    @return result;
+}
+
+@function subtract(a: Number, b: Number): Number
+{
+    @let result: Number = a - b;
+    @return result;
+}
+*
+
+{| 
+@try {
+    @let x: Number = 10;
+    @let y: Number = 5;
+
+    @greet("HTML Star");
+
+    @let sum: Number = add(x, y);
+    @let difference: Number = subtract(x, y);
+
+    @console.log("Sum: " + sum);
+    @console.log("Difference: " + difference);
+} @catch (error: Error) {
+    @console.error("An error occurred: " + error.message);
+} @finally {
+    @console.log("Execution completed.");
+}
+-$ 
+Star
+
++Finished+
