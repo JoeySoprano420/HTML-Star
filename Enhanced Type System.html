@@ -1,0 +1,10 @@
+<>
+@function map<T>(array: Array<T>, callback: (item: T) => T): Array<T>
+{
+    @let result: Array<T> = [];
+    @for (@let i: Number = 0; i < array.length; i++) {
+        result.push(callback(array[i]));
+    }
+    @return result;
+}
+*
