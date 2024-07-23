@@ -1,0 +1,26 @@
+<>
+@async function fetchData(url: String): Promise<Response>
+{
+    @let response: Response = @await fetch(url);
+    @let data: Any = @await response.json();
+    @return data;
+}
+
+@function processInParallel(tasks: Array<() => Any>): Array<Promise<Any>>
+{
+    @return tasks.map(task => @new Promise(resolve => {
+        @setTimeout(() => {
+            resolve(task());
+        }, 0);
+    }));
+}
+
+@function trinaryOperation(a: Trinary, b: Trinary): Trinary
+{
+    @switch (a) {
+        @case "true": @return b;
+        @case "false": @return a;
+        @case "unknown": @return "unknown";
+    }
+}
+*
