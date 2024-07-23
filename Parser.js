@@ -99,3 +99,22 @@ class Parser {
     }
 
     peek()
+{
+        return this.tokens[this.position];
+    }
+}
+
+// Sample tokens to demonstrate the parser in action
+const tokens = [
+    { type: "START_PROGRAM" },
+    { type: "START_BLOCK" },
+    { type: "START_SECTION" },
+    { type: "COMMAND" }, { type: "IDENTIFIER", value: "print" }, { type: "STRING", value: "Hello, World!" }, { type: ";" },
+    { type: "END_SECTION" },
+    { type: "END_BLOCK" },
+    { type: "END_PROGRAM" }
+];
+
+const parser = new Parser(tokens);
+const ast = parser.parse();
+console.log(JSON.stringify(ast, null, 2));
