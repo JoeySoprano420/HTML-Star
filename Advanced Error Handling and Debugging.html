@@ -1,0 +1,13 @@
+<>
+@try {
+    @let result = riskyOperation();
+    @if (result == null) {
+        @throw new Error("Result is null");
+    }
+} @catch (error: Error) {
+    @console.error("Caught an error: " + error.message);
+    @debugger;  ^Pause execution for debugging^
+} @finally {
+    @console.log("Cleaning up resources...");
+}
+*
