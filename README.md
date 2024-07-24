@@ -1,9 +1,130 @@
 # HTML-Star
 HTML Derivative with a twist.
 
-Creating a new programming language called HTML Star involves designing its syntax, semantics, and runtime environment based on the requirements you've outlined. This language will integrate features from HTML, JavaScript, and ML-Plus, and will be dynamically typed with trinary logic. We'll also follow the formatting guidelines you've specified.
+HTML Star Overview
+1. Introduction
+HTML Star is a next-generation programming language derived from HTML, integrating advanced features from JavaScript and ML-Plus. It offers a dynamic, strongly-typed programming environment with support for concurrency, parallelism, and trinary logic. Designed for versatility and high performance across all platforms, HTML Star aims to revolutionize web and application development with its powerful syntax and rich feature set.
 
-Here's an overview of the HTML Star language:
+2. Features
+Dynamic Strong Typing: Combines the flexibility of dynamic typing with the safety of strong typing.
+Concurrency and Parallelism: Supports asynchronous, synchronous, and parallel execution models.
+Trinary Logic: Utilizes trinary logic (true, false, both) instead of binary (true, false).
+Imperative Function-Oriented Programming: Uses an imperative, function-oriented approach for flexibility and control.
+Custom Syntax: Extends HTML with modified syntax for a rich, expressive programming experience.
+Integration with ML-Plus: Incorporates features and capabilities from ML-Plus for enhanced programming power.
+3. Syntax and Grammar
+HTML Star uses a custom syntax that builds on HTML with additional features. Key syntax elements include:
+
+Program Structure:
+
+Start programs with +HTML Star+
+End programs with +Finished+
+Start blocks with ~HTML Star~
+End blocks with *
+Start sections with <>
+Start segments with {|}
+Commands and Actions:
+
+Use @ for commands, calls, actions, functions, etc.
+Statements and Comments:
+
+Use ^ for statements, comments, expressions, identifiers, markers, notes, and notations.
+Requests and Logic:
+
+Use [#] for requests, questions, options, logics, algorithms, and logs.
+Code Banks and Modifiers:
+
+Use % for code banks, transactions, modifiers, quotes, recycled code, etc.
+Special Constructs:
+
+Use & for switches, toggles, caps, code portals, and special instances.
+4. Setup and Installation
+Clone the Repository:
+
+sh
+Copy code
+git clone https://github.com/JoeySoprano420/HTML-Star.git
+cd HTML-Star
+Install Dependencies:
+
+sh
+Copy code
+npm install
+Compile the Project:
+
+sh
+Copy code
+node compile.js
+Publish the Package:
+
+sh
+Copy code
+node publish.js
+Run the Project:
+
+sh
+Copy code
+npm start
+5. Project Structure
+src/: Source code directory.
+dist/: Compiled output directory.
+lib/: Libraries and modules.
+bin/: CLI executables.
+test/: Test cases and related files.
+docs/: Documentation and related resources.
+6. Development Workflow
+Setup: Configure the development environment by installing necessary tools and dependencies.
+Development: Write and modify HTML Star code in the src directory.
+Compilation: Use compile.js to transpile and bundle code.
+Testing: Run tests using test.js to ensure code quality and functionality.
+Build: Execute the build process to prepare the project for distribution.
+Publishing: Publish the package using publish.js to make it available on npm or other package registries.
+7. Runtime Environment
+My_Web_Console: The HTML Star runtime environment integrates with the My_Web_Console for execution and debugging. Ensure that My_Web_Console is set up and running to work with HTML Star.
+Automatic Injection: The setup.js and activation.js scripts handle integration with My_Web_Console.
+8. Configuration Files
+package.json: Defines project metadata, dependencies, scripts, and configurations.
+setup.js: Configures the environment and prepares for integration.
+activation.js: Activates HTML Star within the My_Web_Console environment.
+publish.js: Automates the publishing process.
+compile.js: Handles the compilation and build process.
+9. Examples
+Hello World Program:
+
+html
+Copy code
++HTML Star+
+~HTML Star~
+<>Section Example<>
+{|}
+    @print("Hello, World!")
+* 
++Finished+
+Asynchronous Operation:
+
+html
+Copy code
++HTML Star+
+~HTML Star~
+<>Async Example<>
+{|}
+    @asyncFunction() {
+        @await someOperation();
+        @print("Operation complete.");
+    }
+* 
++Finished+
+10. Documentation and Resources
+HTML Star Documentation
+ML-Plus Integration Guide
+My_Web_Console Integration
+Contributing
+FAQ
+11. Additional Information
+Versioning: Managed in package.json. Follow Semantic Versioning practices.
+Code Quality: Maintain high code quality using ESLint and other linting tools.
+Community: Engage with the community for support and contributions.
+This comprehensive overview should provide a solid foundation for understanding, setting up, and working with HTML Star. Feel free to adjust and expand upon these details to fit specific project needs or updates.
 
 ### 1. Syntax
 HTML Star will use a modified HTML-like syntax with imperative function-oriented programming features. The syntax will include the following elements:
